@@ -20,6 +20,7 @@
   "dependencies": {
     "@volar/language-server": "catalog:default",
     "@tsrx/typescript-plugin": "workspace:*",
+    "@tsrx/language-core": "workspace:*",
     "@tsrx/core": "workspace:*",
     "volar-service-css": "catalog:default",
     "volar-service-typescript": "catalog:default",

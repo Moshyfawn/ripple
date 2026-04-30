@@ -507,11 +507,42 @@ importers:
 
   packages/intellij-plugin: {}
 
+  packages/language-core:
+    dependencies:
+      '@tsrx/preact':
+        specifier: workspace:*
+        version: link:../tsrx-preact
+      '@tsrx/react':
+        specifier: workspace:*
+        version: link:../tsrx-react
+      '@tsrx/ripple':
+        specifier: workspace:*
+        version: link:../tsrx-ripple
+      '@tsrx/solid':
+        specifier: workspace:*
+        version: link:../tsrx-solid
+      '@volar/language-core':
+        specifier: catalog:default
+        version: 2.4.28
+      '@volar/typescript':
+        specifier: catalog:default
+        version: 2.4.28
+    devDependencies:
+      '@types/node':
+        specifier: catalog:default
+        version: 24.11.0
+      typescript:
+        specifier: catalog:default
+        version: 5.9.3
+
   packages/language-server:
     dependencies:
       '@tsrx/core':
         specifier: workspace:*
         version: link:../tsrx
+      '@tsrx/language-core':
+        specifier: workspace:*
+        version: link:../language-core
       '@tsrx/typescript-plugin':
         specifier: workspace:*
         version: link:../typescript-plugin
@@ -843,6 +874,9 @@ importers:
 
   packages/typescript-plugin:
     dependencies:
+      '@tsrx/language-core':
+        specifier: workspace:*
+        version: link:../language-core
       '@tsrx/preact':
         specifier: workspace:*
         version: link:../tsrx-preact
@@ -959,6 +993,9 @@ importers:
       '@ripple-ts/language-server':
         specifier: workspace:*
         version: link:../language-server
+      '@tsrx/language-core':
+        specifier: workspace:*
+        version: link:../language-core
       '@tsrx/react':
         specifier: workspace:*
         version: link:../tsrx-react

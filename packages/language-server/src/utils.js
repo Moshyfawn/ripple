@@ -1,6 +1,6 @@
 /** @import { TextDocument } from 'vscode-languageserver-textdocument' */
 /** @import { LanguageServiceContext, Mapper, SourceScript } from '@volar/language-server' */
-/** @import {TSRXVirtualCodeInstance} from '@tsrx/typescript-plugin/src/language.js'; */
+/** @import {TSRXVirtualCodeInstance} from '@tsrx/language-core'; */
 /** @import { isIdentifierObfuscated, deobfuscateIdentifier, IDENTIFIER_OBFUSCATION_PREFIX } from '@tsrx/core' */
 
 import { URI } from 'vscode-uri';
@@ -9,7 +9,7 @@ import {
 	getWordFromPosition,
 	charAllowedWordRegex,
 	DEBUG,
-} from '@tsrx/typescript-plugin/src/utils.js';
+} from '@tsrx/language-core';
 
 const IMPORT_EXPORT_REGEX = {
 	import: {

@@ -1,5 +1,5 @@
 import { createLanguageServicePlugin } from '@volar/typescript/lib/quickstart/createLanguageServicePlugin.js';
-import { getRippleLanguagePlugin } from './language.js';
+import { getRippleLanguagePlugin } from '@tsrx/language-core';
 
 // This TypeScript plugin is loaded by TypeScript's tsserver when configured in tsconfig.json.
 // Note: When using the Ripple VS Code extension, the language server handles everything,

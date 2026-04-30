@@ -43,6 +43,7 @@
     "@volar/typescript": "catalog:default",
     "@volar/vscode": "catalog:default",
     "@ripple-ts/language-server": "workspace:*",
+    "@tsrx/language-core": "workspace:*",
     "@tsrx/typescript-plugin": "workspace:*",
     "volar-service-typescript": "catalog:default",
     "vscode-languageclient": "catalog:default",

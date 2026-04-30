@@ -11,7 +11,7 @@ const {
 	COMPILER_CANDIDATES,
 	RIPPLE_EXTENSIONS,
 	_reset_for_test,
-} = require('../src/language.js');
+} = require('@tsrx/language-core');
 
 describe('typescript-plugin compiler resolution', () => {
 	beforeEach(() => {

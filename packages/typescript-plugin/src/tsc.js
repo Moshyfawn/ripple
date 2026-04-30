@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { createRequire } from 'node:module';
-import { getRippleLanguagePlugin } from './language.js';
+import { getRippleLanguagePlugin } from '@tsrx/language-core';
 
 const require = createRequire(import.meta.url);
 const { runTsc } = /** @type {typeof import('@volar/typescript/lib/quickstart/runTsc.js')} */ (

@@ -2,7 +2,7 @@ import path from 'path';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
 import { cleanup_fixture_workspaces, create_fixture_workspace } from './workspace-fixtures.js';
 import * as ts from 'typescript';
-import { getRippleLanguagePlugin, TSRXVirtualCode, _reset_for_test } from '../src/language.js';
+import { getRippleLanguagePlugin, TSRXVirtualCode, _reset_for_test } from '@tsrx/language-core';
 
 /**
  * @param {string} source
